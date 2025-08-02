@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Tours | Egypt Photography Tours</title>
+    <meta name="description" content="Explore our range of private photography tours in Egypt, from the Pyramids of Giza to the temples of Luxor. Book your unforgettable adventure today.">
+    <meta name="keywords" content="tours in Egypt, Egypt tour guide, private tours Egypt, photography tours Cairo, Pyramids tour, Luxor, Alexandria, Egypt vacation, professional photographer, luxury tours">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Egypt Photography Tours</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html" class="active">Tours</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tours-page-content content-padding">
+        <div class="container">
+            <h1 class="page-title">Our Premium Tours</h1>
+
+            <div id="pyramids-tour" class="tour-item">
+                <div class="tour-image">
+                    <img src="images/pyramids-tour.jpg" alt="Private Pyramids Guided Tour + Professional Photography">
+                </div>
+                <div class="tour-details">
+                    <h2>📸✨Capture the Magic: Private Pyramids Guided Tour + Professional Photography</h2>
+                    <div class="tour-price">
+                        <p>Solo Traveler: <strong>$150</strong></p>
+                        <p>Couple or Two Persons: <strong>$220</strong></p>
+                    </div>
+                    <p class="tour-description">Step into ancient history on this immersive one-day private tour of the Great Pyramids of Giza and the Sphinx, guided by a passionate local expert. Capture unforgettable moments with a professional photo session, hear the real stories behind the stones, and enjoy an optional camel ride across the desert dunes.</p>
+                    <ul class="tour-features">
+                        <li>✔️ Great Pyramid, Khafre & Menkaure</li>
+                        <li>✔️ Sphinx & Valley Temple</li>
+                        <li>✔️ Desert panorama viewpoint</li>
+                        <li>✔️ Optional camel ride or 4x4 safari</li>
+                        <li>✔️ Professional photography included</li>
+                        <li>✔️ Private pick-up and drop-off</li>
+                    </ul>
+                    <p class="tour-info"><strong>⏰ Duration:</strong> 4–5 hours | <strong>🌞 Best Time:</strong> Morning by 9.00 AM | <strong>📸 Photos:</strong> 100+ edited images included.</p>
+                    <div class="booking-form-container">
+                        <h3>Book Your Tour</h3>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="booking-form">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="hossam0114@hotmail.com">
+                            <input type="hidden" name="item_name" id="item_name_1" value="Pyramids Tour - Solo Traveler">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="amount" id="amount_1" value="150.00">
+                            <label for="traveler-type-1">Traveler Type:</label>
+                            <select id="traveler-type-1" name="on0" onchange="updatePrice(this, 'amount_1', 'item_name_1')">
+                                <option value="Solo Traveler">Solo Traveler ($150)</option>
+                                <option value="Couple/Two Persons">Couple/Two Persons ($220)</option>
+                            </select>
+                            <label for="booking-date-1">Date of Booking:</label>
+                            <input type="date" id="booking-date-1" name="os0" required>
+                            <input type="submit" value="Pay with PayPal" name="submit" class="paypal-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cairo-giza-tour" class="tour-item">
+                <div class="tour-image">
+                    <img src="images/cairo-giza-tour.jpg" alt="2-day premium private tour itinerary in Cairo and Giza">
+                </div>
+                <div class="tour-details">
+                    <h2>2-day premium private tour itinerary in Cairo and Giza</h2>
+                    <div class="tour-price">
+                        <p>Solo Traveler: <strong>$350</strong></p>
+                        <p>Couple or Two Persons: <strong>$440</strong></p>
+                    </div>
+                    <p class="tour-description">An in-depth, two-day adventure covering the iconic sites of Giza and the historic heart of Cairo.</p>
+                    <div class="tour-itinerary">
+                        <h4>✅ Day 1: Giza Pyramids, Sphinx & Desert Adventure</h4>
+                        <p>Duration: ~7 hours | Start Time: 9:00 AM</p>
+                        <p>📍 Stops: Giza Plateau, Panoramic Desert Viewpoint, Valley Temple, Traditional Egyptian Lunch</p>
+                        <h4>✅ Day 2: Cairo Old City + National Museum of Egyptian Civilization (NMEC)</h4>
+                        <p>Duration: ~7–8 hours | Start Time: 9:00 AM</p>
+                        <p>📍 Stops: NMEC, Old Cairo – Islamic Cairo, Khan El Khalili Bazaar</p>
+                    </div>
+                    <ul class="tour-features">
+                        <li>✔️ Private guide & air-conditioned transport</li>
+                        <li>✔️ Photography package (100+ edited photos)</li>
+                    </ul>
+                    <div class="booking-form-container">
+                        <h3>Book Your Tour</h3>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="booking-form">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="hossam0114@hotmail.com">
+                            <input type="hidden" name="item_name" id="item_name_2" value="2-Day Cairo Tour - Solo Traveler">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="amount" id="amount_2" value="350.00">
+                            <label for="traveler-type-2">Traveler Type:</label>
+                            <select id="traveler-type-2" name="on0" onchange="updatePrice(this, 'amount_2', 'item_name_2')">
+                                <option value="Solo Traveler">Solo Traveler ($350)</option>
+                                <option value="Couple/Two Persons">Couple/Two Persons ($440)</option>
+                            </select>
+                            <label for="booking-date-2">Date of Booking:</label>
+                            <input type="date" id="booking-date-2" name="os0" required>
+                            <input type="submit" value="Pay with PayPal" name="submit" class="paypal-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alexandria-tour" class="tour-item">
+                <div class="tour-image">
+                    <img src="images/alexandria-tour.jpg" alt="Discover Alexandria – Private Coastal Day Tour from Cairo">
+                </div>
+                <div class="tour-details">
+                    <h2>Discover Alexandria – Private Coastal Day Tour from Cairo</h2>
+                    <div class="tour-price">
+                        <p>Solo Traveler: <strong>$220</strong></p>
+                        <p>Couple or Two Persons: <strong>$330</strong></p>
+                    </div>
+                    <p class="tour-description">Trade Cairo’s desert dust for the fresh breeze of the Mediterranean on this unforgettable private day tour to Alexandria, Egypt’s second capital and ancient jewel by the sea.</p>
+                    <ul class="tour-features">
+                        <li>✔️ Transportation from Cairo & back</li>
+                        <li>✔️ Expert local guide</li>
+                        <li>✔️ All entrance tickets</li>
+                        <li>✔️ Traditional Egyptian seafood lunch</li>
+                        <li>✔️ Photo session at key spots</li>
+                    </ul>
+                    <div class="booking-form-container">
+                        <h3>Book Your Tour</h3>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="booking-form">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="hossam0114@hotmail.com">
+                            <input type="hidden" name="item_name" id="item_name_3" value="Alexandria Tour - Solo Traveler">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="amount" id="amount_3" value="220.00">
+                            <label for="traveler-type-3">Traveler Type:</label>
+                            <select id="traveler-type-3" name="on0" onchange="updatePrice(this, 'amount_3', 'item_name_3')">
+                                <option value="Solo Traveler">Solo Traveler ($220)</option>
+                                <option value="Couple/Two Persons">Couple/Two Persons ($330)</option>
+                            </select>
+                            <label for="booking-date-3">Date of Booking:</label>
+                            <input type="date" id="booking-date-3" name="os0" required>
+                            <input type="submit" value="Pay with PayPal" name="submit" class="paypal-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="7-day-tour" class="tour-item">
+                <div class="tour-image">
+                    <img src="images/7-day-tour.jpg" alt="7-Day Egypt Discovery Tour – Cairo, Giza, Alexandria & Luxor">
+                </div>
+                <div class="tour-details">
+                    <h2>7-Day Egypt Discovery Tour – Cairo, Giza, Alexandria & Luxor</h2>
+                    <div class="tour-price">
+                        <p>Solo Traveler: <strong>$1900</strong></p>
+                        <p>Couple or Two Persons: <strong>$2900</strong></p>
+                    </div>
+                    <p class="tour-description">Experience the wonders of ancient and modern Egypt on this immersive 7-day guided journey. From the towering Pyramids of Giza and the bustling streets of Cairo to the Mediterranean charm of Alexandria and the majestic temples of Luxor — this trip brings Egypt's soul to life.</p>
+                    <ul class="tour-features">
+                        <li>✔️ Licensed Egyptologist & private local guide</li>
+                        <li>✔️ All entrance fees to major sites</li>
+                        <li>✔️ Domestic Transportation (Cairo–Luxor–Alexandria)</li>
+                        <li>✔️ Authentic Lunch</li>
+                        <li>✔️ Professional photography at key sites</li>
+                    </ul>
+                    <div class="booking-form-container">
+                        <h3>Book Your Tour</h3>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="booking-form">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="hossam0114@hotmail.com">
+                            <input type="hidden" name="item_name" id="item_name_4" value="7-Day Discovery Tour - Solo Traveler">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="amount" id="amount_4" value="1900.00">
+                            <label for="traveler-type-4">Traveler Type:</label>
+                            <select id="traveler-type-4" name="on0" onchange="updatePrice(this, 'amount_4', 'item_name_4')">
+                                <option value="Solo Traveler">Solo Traveler ($1900)</option>
+                                <option value="Couple/Two Persons">Couple/Two Persons ($2900)</option>
+                            </select>
+                            <label for="booking-date-4">Date of Booking:</label>
+                            <input type="date" id="booking-date-4" name="os0" required>
+                            <input type="submit" value="Pay with PayPal" name="submit" class="paypal-button">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Egypt Photography Tours
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p>Abou Elhool, Nazlet El-Samman, Elsamman, Giza, Giza Governorate 12557</p>
+                    <p>&copy; 2024 Egypt Photography Tours. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
