@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Hurghada Snorkeling & Island Trip: Red Sea Boat Tour</title>
+    <meta name="description" content="Embark on a full-day boat trip from Hurghada to explore the vibrant coral reefs and marine life of the Red Sea. Enjoy snorkeling, swimming, and a delicious lunch on board.">
+    <meta name="keywords" content="Hurghada boat trip, Red Sea snorkeling, island tour Hurghada, Egypt diving, Red Sea marine life, Hurghada day trip, snorkeling trip Red Sea">
+    <meta name="author" content="Hossam Tours">
+    <link rel="canonical" href="https://example.com/tour_red_sea_1.html">
+    <link rel="icon" href="https://placehold.co/32x32/000000/FFFFFF?text=E">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: "Inter", sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-indigo-900 text-white shadow-lg p-6 md:p-8">
+        <div class="container mx-auto">
+            <a href="tours.html" class="text-xl md:text-2xl hover:underline">&lt; Back to All Tours</a>
+            <h1 class="text-4xl md:text-5xl font-bold mt-4">Hurghada: Snorkeling & Island Trip</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+        <section class="bg-white rounded-lg shadow-xl p-6 md:p-8">
+            <img src="https://placehold.co/1200x600/4B5563/F9FAFB?text=Snorkeling+Red+Sea" alt="A person snorkeling in the clear waters of the Red Sea" class="w-full rounded-lg mb-6">
+            
+            <h2 class="text-3xl font-semibold mb-4">Detailed Itinerary</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <li>**Morning:** Pick up from your Hurghada hotel. Board a boat and set sail into the pristine waters of the Red Sea.</li>
+                <li>**Midday:** Stop at two different snorkeling spots to discover colorful coral reefs and exotic fish. Snorkeling gear is provided. Enjoy a fresh seafood lunch on board the boat.</li>
+                <li>**Afternoon:** Relax on a secluded island or swim in its shallow turquoise waters. Take photos and soak up the sun.</li>
+                <li>**Evening:** Return to the marina and transfer back to your hotel.</li>
+            </ul>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Inclusions</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Hotel pickup and drop-off.</li>
+                        <li>Boat trip with two snorkeling stops.</li>
+                        <li>Snorkeling equipment.</li>
+                        <li>Lunch and soft drinks on board.</li>
+                        <li>All taxes and fees.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Exclusions</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Gratuities (optional).</li>
+                        <li>Personal expenses.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4">Book Your Tour</h3>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md space-y-4">
+                <div>
+                    <label for="tour_date" class="block text-lg font-medium text-gray-700">Select Date:</label>
+                    <input type="date" id="tour_date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                </div>
+                <div>
+                    <span class="text-lg font-medium text-gray-700">Traveler Type:</span>
+                    <div class="mt-2 space-y-2">
+                        <div class="flex items-center">
+                            <input id="solo_7" name="traveler_type" type="radio" value="solo" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" checked>
+                            <label for="solo_7" class="ml-3 block text-sm font-medium text-gray-700">Solo Traveler ($150)</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="couple_7" name="traveler_type" type="radio" value="couple" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                            <label for="couple_7" class="ml-3 block text-sm font-medium text-gray-700">Couple / Two Persons ($250)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <a id="payment_link_7" href="https://paypal.me/hossam0114/150" target="_blank" class="w-full inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-colors duration-300 text-xl">
+                        Pay Now ($150 USD)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 md:p-8 mt-8">
+        <p>&copy; 2025 Hossam's Egypt Tours. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const soloRadio = document.getElementById('solo_7');
+            const coupleRadio = document.getElementById('couple_7');
+            const paymentLink = document.getElementById('payment_link_7');
+
+            function updatePaymentLink() {
+                const baseLink = "https://paypal.me/hossam0114/";
+                if (soloRadio.checked) {
+                    paymentLink.href = baseLink + "150";
+                    paymentLink.innerHTML = "Pay Now ($150 USD)";
+                } else if (coupleRadio.checked) {
+                    paymentLink.href = baseLink + "250";
+                    paymentLink.innerHTML = "Pay Now ($250 USD)";
+                }
+            }
+
+            soloRadio.addEventListener('change', updatePaymentLink);
+            coupleRadio.addEventListener('change', updatePaymentLink);
+            updatePaymentLink(); // Initial update
+        });
+    </script>
+</body>
+</html>
